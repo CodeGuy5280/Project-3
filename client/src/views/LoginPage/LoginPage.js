@@ -21,7 +21,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
-import image from "assets/img/bg7.jpg";
+import image from "assets/img/meditationlogin.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -37,7 +37,7 @@ export default function LoginPage(props) {
       <Header
         absolute
         color="transparent"
-        brand="Material Kit React"
+        brand="World of Meditation"
         rightLinks={<HeaderLinks />}
         {...rest}
       />
@@ -86,7 +86,7 @@ export default function LoginPage(props) {
                       </Button>
                     </div>
                   </CardHeader>
-                  <p className={classes.divider}>Or Be Classical</p>
+                  <p className={classes.divider}>“Be the change you wish to see in the world.” -Gandhi</p>
                   <CardBody>
                     <CustomInput
                       labelText="First Name..."
