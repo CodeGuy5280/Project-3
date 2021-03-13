@@ -19,7 +19,7 @@ import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
 // sections for this page
-import LoginPage from "../../views/LoginPage/LoginPage.js"
+import ZenPage from "../../views/ZenPage/ZenPage.js"
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 
@@ -47,6 +47,9 @@ export default function HeaderLinks(props) {
             </Link>,
             <Link to={"mantra-page"} className={classes.dropdownLink}>
             Mantra
+            </Link>,
+            <Link to={"zen-page"} className={classes.dropdownLink}>
+            Zen
             </Link>
             
           ]}
@@ -75,7 +78,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="/"
+            href="https://twitter.com/hashtag/meditation?lang=en"
             // target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -93,7 +96,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="/"
+            href="https://www.facebook.com/MeditationMadeEasy/"
             // target="_blank"
             className={classes.navLink}
           >
@@ -110,7 +113,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            href="https://www.instagram.com/explore/tags/meditation/?hl=en"
             target="_blank"
             className={classes.navLink}
           >

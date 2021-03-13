@@ -86,7 +86,7 @@ export default function LoginPage(props) {
                       </Button>
                     </div>
                   </CardHeader>
-                  <p className={classes.divider}>Or Be Classical</p>
+                  <p className={classes.divider}>Peace Awaits</p>
                   <CardBody>
                     <CustomInput
                       labelText="First Name..."
