@@ -12,7 +12,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
+import LoginButton from "components/CustomButtons/Button.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
@@ -22,12 +22,21 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import auth0 from "@auth0/auth0-react"
 //@auth0 provider to allow wrapping tag for root component
 import { Auth0Provider } from "@auth0/auth0-react";
+import {useAuth0} from "@auth0/auth0-react"
+import Button from "components/Auth0LoginButton/Button"
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
 import image from "assets/img/meditationlogin.jpg";
 
 const useStyles = makeStyles(styles);
+
+// login button auth0
+// const LoginButton = () => {
+//   const { loginWithRedirect } = useAuth0();
+
+//   return <button onClick={() => loginWithRedirect()}>Log In</button>;
+// };
 
 export default function LoginPage(props) {
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
@@ -38,6 +47,9 @@ export default function LoginPage(props) {
   const { ...rest } = props;
   return (
     <Auth0Provider>
+      domain= "dev-project-3.us.auth0.com"
+      clientId="Dd7osiGFyJ8qeNrsjpnG1W9dOQcoOAhM"
+      redirectUri={window.location.origin}
       <Header
         absolute
         color="transparent"
@@ -62,13 +74,13 @@ export default function LoginPage(props) {
                     <h4>Login</h4>
                     <div className={classes.socialLine}>
                       <Button
-                        justIcon
-                        href="#pablo"
-                        target="_blank"
-                        color="transparent"
-                        onClick={e => e.preventDefault()}
+                         justIcon
+                         href="#pablo"
+                         target="_blank"
+                         color="transparent"
+                         onClick={e => e.preventDefault()}
                       >
-                        <i className={"fab fa-twitter"} />
+                        { <i className={"fab fa-twitter"} /> }
                       </Button>
                       <Button
                         justIcon
@@ -154,7 +166,8 @@ export default function LoginPage(props) {
         <Footer whiteFont />
       </div>
     </Auth0Provider>
-  
   );
-  document.getElementById("root");
+  
 }
+// document.getElementById("root");
+// export default LoginButton;

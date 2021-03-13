@@ -19,7 +19,7 @@ import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
 // sections for this page
-import ZenPage from "../../views/ZenPage/ZenPage.js"
+// import ZenPage from "client\src\views\ZenPage\ZenPage.js"
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 
@@ -50,6 +50,9 @@ export default function HeaderLinks(props) {
             </Link>,
             <Link to={"/yoga-page"} className={classes.dropdownLink}>
             Yoga
+            </Link>,
+            <Link to={"/zen-page"} className={classes.dropdownLink}>
+            Zen
             </Link>
           ]}
         />
