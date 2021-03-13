@@ -12,7 +12,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import LoginButton from "components/CustomButtons/Button.js";
+// import LoginButton from "components/CustomButtons/Button.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
@@ -23,7 +23,10 @@ import auth0 from "@auth0/auth0-react"
 //@auth0 provider to allow wrapping tag for root component
 import { Auth0Provider } from "@auth0/auth0-react";
 import {useAuth0} from "@auth0/auth0-react"
-import Button from "components/Auth0LoginButton/Button"
+import LoginButton from "components/Auth0LoginButton/LoginButton"
+import LogoutButton from "components/Auth0LogoutButton/LogoutButton"
+import Profile from "components/Auth0User/User";
+import Authentication from "components/Auth0AuthState/Authorization"
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
@@ -46,10 +49,11 @@ export default function LoginPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
-    <Auth0Provider>
+    <Auth0Provider
       domain= "dev-project-3.us.auth0.com"
       clientId="Dd7osiGFyJ8qeNrsjpnG1W9dOQcoOAhM"
       redirectUri={window.location.origin}
+      >
       <Header
         absolute
         color="transparent"
@@ -69,7 +73,11 @@ export default function LoginPage(props) {
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={4}>
               <Card className={classes[cardAnimaton]}>
-                <form className={classes.form}>
+                
+                <Profile />
+                <LoginButton />
+                <LogoutButton />
+                {/* <form className={classes.form}>
                   <CardHeader color="primary" className={classes.cardHeader}>
                     <h4>Login</h4>
                     <div className={classes.socialLine}>
@@ -158,7 +166,7 @@ export default function LoginPage(props) {
                       Get started
                     </Button>
                   </CardFooter>
-                </form>
+                </form> */}
               </Card>
             </GridItem>
           </GridContainer>
@@ -170,4 +178,4 @@ export default function LoginPage(props) {
   
 }
 // document.getElementById("root");
-// export default LoginButton;
+//  export default LoginButton;

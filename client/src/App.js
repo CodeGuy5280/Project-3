@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Auth from "components/Auth0AuthState/Authorization"
 
 function App() {
   return (
