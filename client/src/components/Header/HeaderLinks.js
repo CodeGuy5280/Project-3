@@ -77,8 +77,8 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            // href="https://twitter.com/CreativeTim?ref=creativetim"
-            // target="_blank"
+            href="https://twitter.com/W_O_Meditation"
+            target="_blank"
             color="transparent"
             className={classes.navLink}
           >
@@ -95,8 +95,8 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            // href="https://www.facebook.com/CreativeTim?ref=creativetim"
-            // target="_blank"
+            href="https://www.facebook.com/worldof.meditation.9/"
+            target="_blank"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-facebook"} />
@@ -112,8 +112,8 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            // href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-            // target="_blank"
+            href="https://www.instagram.com/worldofmeditation21/"
+            target="_blank"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-instagram"} />
