@@ -75,7 +75,7 @@ export default function ZenPage(props) {
                 }}
                 {...rest}
             />
-            <Parallax small filter image={require("assets/img/")} />
+            <Parallax small filter image={require("assets/img/ZenRocks.jpg")} />
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <div>
                     <div className={classes.container}>
@@ -94,7 +94,7 @@ export default function ZenPage(props) {
                         </GridContainer>
                         <div className={classes.description}>
                             <p>
-                            “Each morning we are born again. What we do today is what matters most.”{" "}
+                            “Each morning we are born again. What we do today is what matters most. -Buddha”{" "}
                             </p>
                         </div>
                         <GridContainer justify="center">
