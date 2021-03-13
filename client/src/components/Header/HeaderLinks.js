@@ -48,13 +48,8 @@ export default function HeaderLinks(props) {
             <Link to={"/mantra-page"} className={classes.dropdownLink}>
             Mantra
             </Link>,
-<<<<<<< HEAD:material-kit-react-master/src/components/Header/HeaderLinks.js
-            <Link to={"zen-page"} className={classes.dropdownLink}>
-            Zen
-=======
             <Link to={"/yoga-page"} className={classes.dropdownLink}>
             Yoga
->>>>>>> 0142c8d434de712cb030ea4d1546b365481c4e68:client/src/components/Header/HeaderLinks.js
             </Link>
           ]}
         />
@@ -82,11 +77,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-<<<<<<< HEAD:material-kit-react-master/src/components/Header/HeaderLinks.js
-            href="https://twitter.com/hashtag/meditation?lang=en"
-=======
             // href="https://twitter.com/CreativeTim?ref=creativetim"
->>>>>>> 0142c8d434de712cb030ea4d1546b365481c4e68:client/src/components/Header/HeaderLinks.js
             // target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -104,11 +95,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-<<<<<<< HEAD:material-kit-react-master/src/components/Header/HeaderLinks.js
-            href="https://www.facebook.com/MeditationMadeEasy/"
-=======
             // href="https://www.facebook.com/CreativeTim?ref=creativetim"
->>>>>>> 0142c8d434de712cb030ea4d1546b365481c4e68:client/src/components/Header/HeaderLinks.js
             // target="_blank"
             className={classes.navLink}
           >
@@ -125,13 +112,8 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-<<<<<<< HEAD:material-kit-react-master/src/components/Header/HeaderLinks.js
-            href="https://www.instagram.com/explore/tags/meditation/?hl=en"
-            target="_blank"
-=======
             // href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
             // target="_blank"
->>>>>>> 0142c8d434de712cb030ea4d1546b365481c4e68:client/src/components/Header/HeaderLinks.js
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-instagram"} />
