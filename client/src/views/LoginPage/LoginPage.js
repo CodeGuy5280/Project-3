@@ -18,6 +18,8 @@ import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
+//@auth0/auth0-react
+import auth0 from "@auth0/auth0-react"
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
