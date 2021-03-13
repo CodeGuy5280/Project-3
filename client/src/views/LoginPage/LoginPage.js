@@ -20,6 +20,8 @@ import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 //@auth0/auth0-react
 import auth0 from "@auth0/auth0-react"
+//@auth0 provider to allow wrapping tag for root component
+import { Auth0Provider } from "@auth0/auth0-react";
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
@@ -35,7 +37,7 @@ export default function LoginPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
-    <div>
+    <Auth0Provider>
       <Header
         absolute
         color="transparent"
@@ -151,6 +153,8 @@ export default function LoginPage(props) {
         </div>
         <Footer whiteFont />
       </div>
-    </div>
+    </Auth0Provider>
+  
   );
+  document.getElementById("root");
 }
