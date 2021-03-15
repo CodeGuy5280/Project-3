@@ -27,15 +27,10 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Intermediate from "views/MantraPage/Sections/Intermediate.js";
+import MeditationModal from "views/MantraPage/Sections/MeditationModal.js";
+
 
 import profile from "assets/img/buddha2.jpg";
-
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import javaStyles from "assets/jss/material-kit-react/views/componentsSections/javascriptStyles.js";
@@ -96,10 +91,7 @@ export default function MantraPage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+                "May my heart be kind, my mind fierce, and my spirit brave."{" "}
               </p>
             </div>
             <GridContainer justify="center">
@@ -113,53 +105,76 @@ export default function MantraPage(props) {
                       tabIcon: OndemandVideoIcon,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={12}>
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gMZ1nzQJZvU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="beginner2"></iframe>
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vbVh43mTHF4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="beginner1"></iframe>
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vH11undyI2o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="beginner3"></iframe>
-                          </GridItem>
+                            <MeditationModal 
+                              img={require("assets/img/bg-mantra-b1.png")}
+                              title="How to Transcend Meditation"
+                              description="beginner1"
+                              video="https://www.youtube-nocookie.com/embed/gMZ1nzQJZvU"
+                            />
+                            <MeditationModal 
+                              img={require("assets/img/bg-mantra-b2.png")}
+                              title="5 Minute Meditation"
+                              description="beginner2"
+                              video="https://www.youtube-nocookie.com/embed/vbVh43mTHF4"
+                            />
+                            <MeditationModal 
+                              img={require("assets/img/bg-mantra-b3.png")}
+                              title="OM Meditation"
+                              description="beginner3"
+                              video="https://www.youtube-nocookie.com/embed/vH11undyI2o"
+                            />
                         </GridContainer>
                       )
                     },
                     {
                       tabButton: "Intermediate",
                       tabIcon: SpaIcon,
-                      tabContent: <Intermediate />
+                      tabContent: (
+                          <GridContainer justify="center">
+                            <MeditationModal 
+                              img={require("assets/img/bg-mantra-i1.png")}
+                              title="What Chanting a Mantra Can Do To You"
+                              description="intermediate1"
+                              video="https://www.youtube.com/embed/vd9j8uo6OSY"
+                            />
+                            <MeditationModal 
+                              img={require("assets/img/bg-mantra-i2.png")}
+                              title="Morning Mantra to Start Your Day"
+                              description="intermediate2"
+                              video="https://www.youtube.com/embed/8wtLiBZs87Y"
+                            />
+                            <MeditationModal 
+                              img={require("assets/img/bg-mantra-i3.png")}
+                              title="Guided Meditation on the Body, Space, and Awareness"
+                              description="intermediate3"
+                              video="https://www.youtube.com/embed/5GSeWdjyr1c"
+                            />
+                        </GridContainer>
+                      )
                     },
                     {
                       tabButton: "Advanced",
                       tabIcon: TrendingUpIcon,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio3}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
+                          <MeditationModal 
+                            img={require("assets/img/bg-mantra-a1.png")}
+                            title="Deep 5 Minute OM Meditation"
+                            description="advanced1"
+                            video="https://www.youtube.com/embed/EkrCJb0I8Z0"
+                          />
+                          <MeditationModal 
+                            img={require("assets/img/bg-mantra-a2.png")}
+                            title="Chakra Cleansing"
+                            description="advanced2"
+                            video="https://www.youtube.com/embed/NmAHY_tg9Es"
+                          />
+                          <MeditationModal 
+                            img={require("assets/img/bg-mantra-a3.png")}
+                            title="Remove All Obstacles"
+                            description="advanced3"
+                            video="https://www.youtube.com/embed/wYVTagVDJLA"
+                          />
                         </GridContainer>
                       )
                     }

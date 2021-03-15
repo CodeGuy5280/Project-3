@@ -85,16 +85,18 @@ export default function ProfilePage(props) {
             <div className={classes.description}>
               <p>
                10 Mantras to help with Daily Gratitude:
-               1. Every experience I have is perfect for my growth.
-               2. Nowhere to be, nothing to do, nothing to fix.
-               3. I have everything I need.
-               4. I appreciate the abundance in my life and I allow myself to expand in gratitude, success and joy everyday.
-               5. Dhanya Vad- sanskrit phrase meaning “I am grateful”
-               6. Thank your food, and thank it well.
-               7. Gratitude brings me into a harmonious relationship with the good in everyone and everything that surrounds me.
-               8. Life is a dream. Everything I am looking for is already on its way.
-               9. In this very moment I am grateful for…
-               10. I clearly see all there is to be grateful for in life. I acknowledge the blessings I have received in my life with gratitude.
+               <ol>
+                 <li>Every experience I have is perfect for my growth.</li>
+                 <li>Nowhere to be, nothing to do, nothing to fix.</li>
+                 <li>Nowhere to be, nothing to do, nothing to fix.</li>
+                 <li>Nowhere to be, nothing to do, nothing to fix.</li>
+                 <li>Nowhere to be, nothing to do, nothing to fix.</li>
+                 <li>Nowhere to be, nothing to do, nothing to fix.</li>
+                 <li>Nowhere to be, nothing to do, nothing to fix.</li>
+                 <li>Nowhere to be, nothing to do, nothing to fix.</li>
+                 <li>Nowhere to be, nothing to do, nothing to fix.</li>
+               </ol>
+
                {" "}
               </p>
             </div>
