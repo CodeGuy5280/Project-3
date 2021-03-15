@@ -31,7 +31,7 @@ export default function Footer(props) {
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
+            {/* <ListItem className={classes.inlineBlock}>
               <a
                 href="https://www.creative-tim.com/?ref=mkr-footer"
                 className={classes.block}
@@ -57,7 +57,7 @@ export default function Footer(props) {
               >
                 Blog
               </a>
-            </ListItem>
+            </ListItem> */}
             <ListItem className={classes.inlineBlock}>
               <a
                 href="https://www.creative-tim.com/license?ref=mkr-footer"
@@ -77,9 +77,9 @@ export default function Footer(props) {
             className={aClasses}
             target="_blank"
           >
-            Creative Tim
+            Team Kittens "Meow"
           </a>{" "}
-          for a better web.
+          for a better lifestyle.
         </div>
       </div>
     </footer>
