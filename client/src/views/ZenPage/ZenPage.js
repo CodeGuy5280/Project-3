@@ -76,7 +76,7 @@ export default function ZenPage(props) {
                 }}
                 {...rest}
             />
-            <Parallax small filter image={require("../assets/img/ZenRocks.jpg")} />
+            <Parallax small filter image={require("assets/img/ZenRocks.jpg")} />
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <div>
                     <div className={classes.container}>
