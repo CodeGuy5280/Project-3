@@ -51,7 +51,7 @@ export default function HeaderLinks(props) {
             <Link to={"/yoga-page"} className={classes.dropdownLink}>
             Yoga
             </Link>,
-            <Link to={"/Zen-page"} className={classes.dropdownLink}>
+            <Link to={"/zen-page"} className={classes.dropdownLink}>
             Zen
             </Link>
 
