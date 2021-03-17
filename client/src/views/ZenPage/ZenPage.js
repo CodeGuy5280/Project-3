@@ -33,7 +33,7 @@ import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Intermediate from "views/MantraPage/Sections/Intermediate.js";
 
-import profile from "assets/img/YogaMountain.jpg";
+import profile from "assets/img/ZenRocks.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio3 from "assets/img/examples/studio-3.jpg";
@@ -111,9 +111,9 @@ export default function ZenPage(props) {
                                             tabContent: (
                                                 <GridContainer justify="center">
                                                     <GridItem xs={12} sm={12} md={12}>
-                                                    <iframe width="1912" height="806" src="https://www.youtube.com/embed/aTIV9djESbY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                    <iframe width="1912" height="806" src="https://www.youtube.com/embed/5GSMRUl9UPo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                    <iframe width="1912" height="806" src="https://www.youtube.com/embed/Uq7nBj17maA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aTIV9djESbY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5GSMRUl9UPo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Uq7nBj17maA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                     </GridItem>
                                                 </GridContainer>
                                             )
@@ -124,9 +124,9 @@ export default function ZenPage(props) {
                                             tabContent: (
                                                 <GridContainer justify="center">
                                                     <GridItem xs={12} sm={12} md={12}>
-                                                    <iframe width="1912" height="806" src="https://www.youtube.com/embed/XFg746_bk-Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                    <iframe width="1912" height="806" src="https://www.youtube.com/embed/Z8AvyXAB23M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                    <iframe width="1912" height="806" src="https://www.youtube.com/embed/5GSeWdjyr1c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XFg746_bk-Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z8AvyXAB23M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5GSeWdjyr1c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                     </GridItem>
                                                 </GridContainer>
                                             )
@@ -137,9 +137,9 @@ export default function ZenPage(props) {
                                             tabContent: (
                                                 <GridContainer justify="center">
                                                     <GridItem xs={12} sm={12} md={4}>
-                                                    <iframe width="1912" height="806" src="https://www.youtube.com/embed/4JudZVYYJ40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                    <iframe width="1912" height="806" src="https://www.youtube.com/embed/rGWNLGXGZIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                    <iframe width="1912" height="806" src="https://www.youtube.com/embed/1MGgK8eulKo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4JudZVYYJ40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rGWNLGXGZIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1MGgK8eulKo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                     </GridItem>
                                                 </GridContainer>
                                             )
