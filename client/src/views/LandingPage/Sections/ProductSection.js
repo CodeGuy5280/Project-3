@@ -43,7 +43,7 @@ export default function ProductSection() {
               title="Save Your Favorites"
               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={FavoriteIcon}
-              iconColor="success"
+              iconColor="danger"
               vertical
             />
           </GridItem>
@@ -52,7 +52,7 @@ export default function ProductSection() {
               title="Memoir"
               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={NotesIcon}
-              iconColor="danger"
+              iconColor="success"
               vertical
             />
           </GridItem>
