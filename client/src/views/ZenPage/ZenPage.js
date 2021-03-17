@@ -55,6 +55,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 Transition.displayName = "Transition";
 
 export default function ZenPage(props) {
+    const classes = useStyles();
     const{...rest} = props;
     const imageClasses = classNames(
         classes.imgRaised,
@@ -62,7 +63,7 @@ export default function ZenPage(props) {
         classes.imgFluid
     );
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
-       const [classicModal, setClassicModal] = React.useState(false);
+    //    const [classicModal, setClassicModal] = React.useState(false);
     return (
         <div>
             <Header
