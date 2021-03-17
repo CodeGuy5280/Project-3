@@ -31,6 +31,8 @@ export default function Intermediate(props) {
   const classes = useStyles();
 
   const [classicModal, setClassicModal] = React.useState(false);
+  const [BeginnerModal1, setBeginnerModal1] = React.useState(false);
+  const [BeginnerModal2, setBeginnerModal2] = React.useState(false);
   return (
     <div>
         <GridContainer justify="center">
@@ -39,7 +41,7 @@ export default function Intermediate(props) {
                     color="transparent"
                     size
                     onClick={() => {
-                        setClassicModal(true);
+                        setBeginnerModal1(true);
                     }}
                 >
                     <GridItem xs={12} sm={12} md={12}>
@@ -51,15 +53,15 @@ export default function Intermediate(props) {
                         root: classes.center,
                         paper: classes.modal
                     }}
-                    open={classicModal}
+                    open={BeginnerModal1}
                     TransitionComponent={Transition}
                     keepMounted
-                    onClose={() => setClassicModal(false)}
-                    aria-labelledby="classic-modal-slide-title"
-                    aria-describedby="classic-modal-slide-description"
+                    onClose={() => setBeginnerModal1(false)}
+                    aria-labelledby="beginnner1-title"
+                    aria-describedby="beginner1-description"
                 >
                     <DialogTitle
-                        id="classic-modal-slide-title"
+                        id="beginner1-title"
                         disableTypography
                         className={classes.modalHeader}
                     >
@@ -68,7 +70,7 @@ export default function Intermediate(props) {
                             key="close"
                             aria-label="Close"
                             color="inherit"
-                            onClick={() => setClassicModal(false)}
+                            onClick={() => setBeginnerModal1(false)}
                         >
                             <Close className={classes.modalClose} />
                         </IconButton>
@@ -77,7 +79,7 @@ export default function Intermediate(props) {
                     </DialogTitle>
                 
                     <DialogContent
-                        id="classic-modal-slide-description"
+                        id="beginner1-description"
                         className={classes.modalBody}
                     >
                         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gMZ1nzQJZvU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -88,7 +90,7 @@ export default function Intermediate(props) {
                             Nice Button
                         </Button>
                         <Button
-                            onClick={() => setClassicModal(false)}
+                            onClick={() => setBeginnerModal1(false)}
                             color="danger"
                             simple
                         >
@@ -101,7 +103,7 @@ export default function Intermediate(props) {
                 <Button
                     color="transparent"
                     size
-                    onClick={() => setClassicModal(true)}
+                    onClick={() => setBeginnerModal2(true)}
                 >
                     <img src={require("assets/img/bg-mantra-b2.png")} alt="beginner2" width="75%" height="250"></img>
 
@@ -111,15 +113,15 @@ export default function Intermediate(props) {
                         root: classes.center,
                         paper: classes.modal
                     }}
-                    open={classicModal}
+                    open={BeginnerModal2}
                     TransitionComponent={Transition}
                     keepMounted
                     onClose={() => setClassicModal(false)}
-                    aria-labelledby="classic-modal-slide-title"
-                    aria-describedby="classic-modal-slide-description"
+                    aria-labelledby="beginner2-title"
+                    aria-describedby="beginner2-description"
                 >
                     <DialogTitle
-                        id="classic-modal-slide-title"
+                        id="beginner2-title"
                         disableTypography
                         className={classes.modalHeader}
                     >
@@ -128,7 +130,7 @@ export default function Intermediate(props) {
                             key="close"
                             aria-label="Close"
                             color="inherit"
-                            onClick={() => setClassicModal(false)}
+                            onClick={() => setBeginnerModal2(false)}
                         >
                             <Close className={classes.modalClose} />
                         </IconButton>
@@ -136,7 +138,7 @@ export default function Intermediate(props) {
                         <h4 className={classes.modalTitle}>5 Minute Mantra Meditation</h4>
                     </DialogTitle>
                     <DialogContent
-                        id="classic-modal-slide-description"
+                        id="beginner2-description"
                         className={classes.modalBody}
                     >
                         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vbVh43mTHF4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -146,7 +148,7 @@ export default function Intermediate(props) {
                             Nice Button
                         </Button>
                         <Button
-                            onClick={() => setClassicModal(false)}
+                            onClick={() => setBeginnerModal2(false)}
                             color="danger"
                             simple
                         >
@@ -173,11 +175,11 @@ export default function Intermediate(props) {
                 TransitionComponent={Transition}
                 keepMounted
                 onClose={() => setClassicModal(false)}
-                aria-labelledby="classic-modal-slide-title"
-                aria-describedby="classic-modal-slide-description"
+                aria-labelledby="beginner3-title"
+                aria-describedby="beginner3-description"
                 >
                 <DialogTitle
-                    id="classic-modal-slide-title"
+                    id="beginner3-title"
                     disableTypography
                     className={classes.modalHeader}
                 >
@@ -193,7 +195,7 @@ export default function Intermediate(props) {
                     <h4 className={classes.modalTitle}>OM Mantra</h4>
                 </DialogTitle>
                 <DialogContent
-                    id="classic-modal-slide-description"
+                    id="beginner3-description"
                     className={classes.modalBody}
                 >
                     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vH11undyI2o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="beginner3"></iframe>

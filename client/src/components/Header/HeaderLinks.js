@@ -82,12 +82,17 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
+<<<<<<< HEAD
 <<<<<<< HEAD:material-kit-react-master/src/components/Header/HeaderLinks.js
             href="https://twitter.com/hashtag/meditation?lang=en"
 =======
             // href="https://twitter.com/CreativeTim?ref=creativetim"
 >>>>>>> 0142c8d434de712cb030ea4d1546b365481c4e68:client/src/components/Header/HeaderLinks.js
             // target="_blank"
+=======
+            href="https://twitter.com/W_O_Meditation"
+            target="_blank"
+>>>>>>> e5205851c0b3a5c7a14d9bacc8f2cfceb095e71a
             color="transparent"
             className={classes.navLink}
           >
@@ -104,12 +109,17 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
+<<<<<<< HEAD
 <<<<<<< HEAD:material-kit-react-master/src/components/Header/HeaderLinks.js
             href="https://www.facebook.com/MeditationMadeEasy/"
 =======
             // href="https://www.facebook.com/CreativeTim?ref=creativetim"
 >>>>>>> 0142c8d434de712cb030ea4d1546b365481c4e68:client/src/components/Header/HeaderLinks.js
             // target="_blank"
+=======
+            href="https://www.facebook.com/worldof.meditation.9/"
+            target="_blank"
+>>>>>>> e5205851c0b3a5c7a14d9bacc8f2cfceb095e71a
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-facebook"} />
@@ -125,6 +135,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
+<<<<<<< HEAD
 <<<<<<< HEAD:material-kit-react-master/src/components/Header/HeaderLinks.js
             href="https://www.instagram.com/explore/tags/meditation/?hl=en"
             target="_blank"
@@ -132,6 +143,10 @@ export default function HeaderLinks(props) {
             // href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
             // target="_blank"
 >>>>>>> 0142c8d434de712cb030ea4d1546b365481c4e68:client/src/components/Header/HeaderLinks.js
+=======
+            href="https://www.instagram.com/worldofmeditation21/"
+            target="_blank"
+>>>>>>> e5205851c0b3a5c7a14d9bacc8f2cfceb095e71a
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-instagram"} />

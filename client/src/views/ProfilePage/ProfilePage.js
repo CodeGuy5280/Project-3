@@ -17,7 +17,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import profile from "assets/img/faces/christian.jpg";
+import profile from "assets/img/faces/profilepic.webp";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -56,7 +56,7 @@ export default function ProfilePage(props) {
         }}
         {...rest}
       />
-      <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+      <Parallax small filter image={require("assets/img/meditate.jpg")} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
@@ -67,34 +67,26 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-twitter"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-instagram"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-facebook"} />
-                    </Button>
+                    <h3 className={classes.title}>Ashley Bartholomew</h3>
+                    <h6><u>10 Mantras to help with Daily Gratitude</u></h6>
                   </div>
                 </div>
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
               <p>
-               10 Mantras to help with Daily Gratitude:
-               1. Every experience I have is perfect for my growth.
-               2. Nowhere to be, nothing to do, nothing to fix.
-               3. I have everything I need.
-               4. I appreciate the abundance in my life and I allow myself to expand in gratitude, success and joy everyday.
-               5. Dhanya Vad- sanskrit phrase meaning “I am grateful”
-               6. Thank your food, and thank it well.
-               7. Gratitude brings me into a harmonious relationship with the good in everyone and everything that surrounds me.
-               8. Life is a dream. Everything I am looking for is already on its way.
-               9. In this very moment I am grateful for…
-               10. I clearly see all there is to be grateful for in life. I acknowledge the blessings I have received in my life with gratitude.
+               {/* <ul>10 Mantras to help with Daily Gratitude: </ul>
+               <br/>  */}
+               <ul>1. Every experience I have is perfect for my growth.</ul>
+               <ul>2. Nowhere to be, nothing to do, nothing to fix.</ul>
+               <ul>3. I have everything I need.</ul>
+               <ul>4. I appreciate the abundance in my life and I allow myself to expand in gratitude, success and joy everyday.</ul>
+               <ul>5. Dhanya Vad- sanskrit phrase meaning “I am grateful”</ul>
+               <ul>6. Thank your food, and thank it well.</ul>
+               <ul>7. Gratitude brings me into a harmonious relationship with the good in everyone and everything that surrounds me.</ul>
+               <ul>8. Life is a dream. Everything I am looking for is already on its way.</ul>
+               <ul>9. In this very moment I am grateful for…</ul>
+               <ul>10. I clearly see all there is to be grateful for in life. I acknowledge the blessings I have received in my life with gratitude.</ul>
                {" "}
               </p>
             </div>
