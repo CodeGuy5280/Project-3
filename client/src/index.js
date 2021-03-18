@@ -16,6 +16,7 @@ import ProfilePage from "views/ProfilePage/ProfilePage.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 import MantraPage from "views/MantraPage/MantraPage.js"
 import YogaPage from "views/YogaPage/YogaPage.js"
+import ZenPage from "views/ZenPage/ZenPage.js";
 import FavoritesPage from "views/FavoritesPage/FavoritesPage.js";
 
 var hist = createBrowserHistory();
@@ -31,6 +32,7 @@ ReactDOM.render(
           <Route exact path="/favorites-page" component={FavoritesPage} />
           <Route path="/mantra-page" component={MantraPage} />
           <Route path="/yoga-page" component={YogaPage} />
+          <Route path="/zen-page" component={ZenPage} />
           <Route path="/" component={LandingPage} />
         </Switch>
       </StoreProvider>

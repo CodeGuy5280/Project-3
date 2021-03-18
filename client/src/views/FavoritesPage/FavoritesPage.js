@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -28,8 +28,8 @@ import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Intermediate from "views/MantraPage/Sections/Intermediate.js";
 import MeditationModal from "views/MantraPage/Sections/MeditationModal.js";
-import { useStoreContext } from "../utils/GlobalState";
-import { REMOVE_FAVORITE, LOADING, UPDATE_FAVORITES } from "../utils/actions";
+import { useStoreContext } from "utils/GlobalState.js";
+import { REMOVE_FAVORITE, LOADING, UPDATE_FAVORITES } from "utils/actions.js";
 
 
 import profile from "assets/img/buddha2.jpg";
@@ -116,10 +116,10 @@ export default function FavoritesPage(props) {
             </div>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
+                {console.log(state.favorites)}
 
                 {state.favorites.length ? (
-                        <List>
-                        {state.favorites.map(meditation => (
+                        state.favorites.map(meditation => (
                             <GridItem key={meditation._id}>
                                 <MeditationModal 
                                     img={require(meditation.img)}
@@ -127,10 +127,8 @@ export default function FavoritesPage(props) {
                                     description={meditation.description}
                                     video={meditation.video}
                                 />
-                                <DeleteBtn onClick={() => removeFromFavorites(meditation._id)} />
                             </GridItem>
-                        ))}
-                        </List>
+                        ))
                     ) : (
                         <h3>You haven't added any favorites yet!</h3>
                 )}        

@@ -27,8 +27,8 @@ import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import imagesStyles from "assets/jss/material-kit-react/imagesStyles";
 
 // Dependencies
-import { useStoreContext } from "../utils/GlobalState";
-import { SET_CURRENT_MEDITATION, ADD_FAVORITE, REMOVE_FAVORITE } from "utils/actions";
+import { useStoreContext } from "utils/GlobalState.js";
+import { SET_CURRENT_MEDITATION, ADD_FAVORITE, REMOVE_FAVORITE } from "utils/actions.js";
 import API from "utils/API"
 
 const useStyles = makeStyles(styles);
@@ -38,7 +38,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 Transition.displayName = "Transition";
-export default function MeditationModal({img, title, description, video}) {
+export default function MeditationModal({_id, img, title, description, video}) {
   const classes = useStyles();
   const [classicModal, setClassicModal] = React.useState(false);
   const [state, dispatch] = useStoreContext();
@@ -48,13 +48,16 @@ export default function MeditationModal({img, title, description, video}) {
       type: ADD_FAVORITE,
       meditation: state.currentMeditation
     });
+    console.log(state.currentMeditation)
   };
 
   const removeFavorite = () => {
     dispatch({
       type: REMOVE_FAVORITE,
+      meditation: state.currentMeditation,
       _id: state.currentMeditation._id
     });
+    console.log(state.currentMeditation)
   };
 
   return (
@@ -67,6 +70,7 @@ export default function MeditationModal({img, title, description, video}) {
                     onClick={() => {
                         setClassicModal(true);
                         dispatch({ type: SET_CURRENT_MEDITATION, meditation: {
+                            _id: {_id},
                             img: {img},
                             title: {title},
                             description: {description},
@@ -116,8 +120,12 @@ export default function MeditationModal({img, title, description, video}) {
                     </DialogContent>
 
                     <DialogActions className={classes.modalFooter}>
-                        {state.favorites.indexOf(state.currentPost) !== -1 ? (
-                            <FavoriteIcon style={{color: "red"}} onClick={removeFavorite} /> 
+                        {state.favorites.indexOf(state.currentMeditation) !== -1 ? (
+                            <FavoriteIcon style={{color: "red"}} 
+                                onClick={() => {
+                                    removeFavorite();
+                                    // removeFromFavorites(meditation._id);
+                                }} /> 
                         ) : (
                             <IconButton aria-label="Favorite" onClick={addFavorite}>
                                 <img src={FavoriteOutlineGrey} alt="Favorite Icon Grey Outline" color="red" ></img>
