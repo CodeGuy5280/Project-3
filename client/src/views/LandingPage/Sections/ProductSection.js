@@ -32,7 +32,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Types of Meditation"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Discover different types of meditation styles, like Mantra, Yoga, and Zen."
               icon={Chat}
               iconColor="info"
               vertical
@@ -41,7 +41,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Save Your Favorites"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Save all your favorite meditations to revisit again."
               icon={FavoriteIcon}
               iconColor="danger"
               vertical
@@ -50,7 +50,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Memoir"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Keep track of your thoughts throughout your meditation journey."
               icon={NotesIcon}
               iconColor="success"
               vertical
