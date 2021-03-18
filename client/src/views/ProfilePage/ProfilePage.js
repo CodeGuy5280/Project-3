@@ -78,7 +78,8 @@ export default function ProfilePage(props) {
   //   onRedirecting: () => <Loading />,
   // });
 
-  var name = "Smashinator"
+  var name = "Ashley"
+  
   return (
     <div>
       <Header
