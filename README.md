@@ -20,7 +20,7 @@ World of Meditation is a meditation application designed to be complementary to 
 * Node.js
 * Express.js
 * React.js & [`react-router-dom`](https://www.npmjs.com/package/react-router-dom)
-* [Material-UI](https://material-ui.com/)
+* [Material-UI](https://material-ui.com/) & [Material-UI Icons](https://www.materialui.co/icons)
 * Heroku
 
 ## Installation
