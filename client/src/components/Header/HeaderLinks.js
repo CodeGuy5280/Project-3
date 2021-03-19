@@ -20,6 +20,7 @@ import Button from "components/CustomButtons/Button.js";
 
 // sections for this page
 import ZenPage from "../../views/ZenPage/ZenPage.js"
+import Profile from "client\src\views\ProfilePage\ProfilePage.js"
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 
@@ -59,6 +60,9 @@ export default function HeaderLinks(props) {
             </Link>,
             <Link to={"/zen-page"} className={classes.dropdownLink}>
             Zen
+            </Link>,
+            <Link to={"/profile-page"} className={classes.dropdownLink}>
+            Profile
             </Link>
 
           ]}

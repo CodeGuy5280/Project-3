@@ -22,6 +22,8 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import SignupButton from "components/SignUpButton/signup-button";
 import LoginButton from "components/LoginButton/login-button";
 import LogoutButton from "components/LogoutButton/logout-button";
+import NavBar from "components/Navbar/nav-bar";
+import authnav from "components/auth-nav.js/auth-nav";
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
