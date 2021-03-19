@@ -57,7 +57,7 @@ export default function LandingPage(props) {
                 color="danger"
                 size="lg"
                 href={"/login-page"}
-                target="_blank"
+                // target="_blank"
                 rel="noopener noreferrer"
               >
                 Get Started Today
