@@ -22,6 +22,7 @@ import Button from "components/CustomButtons/Button.js";
 
 // sections for this page
 import ZenPage from "../../views/ZenPage/ZenPage.js"
+import Profile from "client\src\views\ProfilePage\ProfilePage.js"
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 

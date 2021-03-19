@@ -18,7 +18,17 @@ import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
+
 import { Link } from "react-router-dom";
+
+//Auth0 Buttons
+import SignupButton from "components/SignUpButton/signup-button";
+import LoginButton from "components/LoginButton/login-button";
+import LogoutButton from "components/LogoutButton/logout-button";
+import LoginPage from "client\src\views\LoginPage\LoginPage.js"
+import NavBar from "components/Navbar/nav-bar";
+import authnav from "components/auth-nav.js/auth-nav";
+
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
 import image from "assets/img/meditationlogin.jpg";
@@ -138,9 +148,22 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
+
                     <Button simple color="primary" size="lg" href={"/profile-page"}>
                       Get started
                     </Button>
+
+                    <LoginButton simple color="primary" size="lg">
+                      Login
+                    </LoginButton>
+                    <LogoutButton simple color="primary" size="lg">
+                      Logout
+                    </LogoutButton>
+                    <SignupButton simple color="primary" size="lg">
+                      Signup
+                    </SignupButton>
+                    
+
                   </CardFooter>
                 </form>
               </Card>
