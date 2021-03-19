@@ -22,6 +22,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import SignupButton from "components/SignUpButton/signup-button";
 import LoginButton from "components/LoginButton/login-button";
 import LogoutButton from "components/LogoutButton/logout-button";
+import LoginPage from "client\src\views\LoginPage\LoginPage.js"
 import NavBar from "components/Navbar/nav-bar";
 import authnav from "components/auth-nav.js/auth-nav";
 
