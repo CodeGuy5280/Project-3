@@ -17,6 +17,8 @@ import { Apps, CloudDownload } from "@material-ui/icons";
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
+// import LoginButton from "components/LoginButton/login-button.js";
+// import LogOutButton from "components/LogoutButton/logout-button.js";
 
 // sections for this page
 import ZenPage from "../../views/ZenPage/ZenPage.js"
@@ -40,12 +42,10 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              Home Page
-            </Link>,
-            <Link to={"/login-page"} className={classes.dropdownLink}>
-              Login
-            </Link>,
+            
+            // <Link to={"/login-page"} className={classes.dropdownLink}>
+            //   Login
+            // </Link>,
             <Link to={"/profile-page"} className={classes.dropdownLink}>
               Profile Page
             </Link>,
@@ -61,9 +61,9 @@ export default function HeaderLinks(props) {
             <Link to={"/zen-page"} className={classes.dropdownLink}>
             Zen
             </Link>,
-            <Link to={"/profile-page"} className={classes.dropdownLink}>
-            Profile
-            </Link>
+            <Link to="/" className={classes.dropdownLink}>
+            Logout
+            </Link>,
 
           ]}
         />

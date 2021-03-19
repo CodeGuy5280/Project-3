@@ -18,6 +18,9 @@ import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
+
+import { Link } from "react-router-dom";
+
 //Auth0 Buttons
 import SignupButton from "components/SignUpButton/signup-button";
 import LoginButton from "components/LoginButton/login-button";
@@ -145,6 +148,11 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
+
+                    <Button simple color="primary" size="lg" href={"/profile-page"}>
+                      Get started
+                    </Button>
+
                     <LoginButton simple color="primary" size="lg">
                       Login
                     </LoginButton>
@@ -155,6 +163,7 @@ export default function LoginPage(props) {
                       Signup
                     </SignupButton>
                     
+
                   </CardFooter>
                 </form>
               </Card>
