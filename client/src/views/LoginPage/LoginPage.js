@@ -18,6 +18,10 @@ import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
+//Auth0 Buttons
+import SignupButton from "components/SignUpButton/signup-button";
+import LoginButton from "components/LoginButton/login-button";
+import LogoutButton from "components/LogoutButton/logout-button";
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
@@ -138,9 +142,16 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button simple color="primary" size="lg">
-                      Get started
-                    </Button>
+                    <LoginButton simple color="primary" size="lg">
+                      Login
+                    </LoginButton>
+                    <LogoutButton simple color="primary" size="lg">
+                      Logout
+                    </LogoutButton>
+                    <SignupButton simple color="primary" size="lg">
+                      Signup
+                    </SignupButton>
+                    
                   </CardFooter>
                 </form>
               </Card>
