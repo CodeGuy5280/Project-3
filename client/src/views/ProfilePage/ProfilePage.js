@@ -35,6 +35,7 @@ import work5 from "assets/img/examples/yoga1.jpg";
 import work6 from "assets/img/examples/yoga3.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
+import { Class } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -78,7 +79,7 @@ export default function ProfilePage(props) {
   //   onRedirecting: () => <Loading />,
   // });
 
-  var name = "Smashinator"
+  var name = "Ashley"
   return (
     <div>
       <Header
@@ -229,7 +230,7 @@ export default function ProfilePage(props) {
                     },
                     {
                       tabButton: "Zen",
-                      tabIcon: Favorite,
+                      tabIcon: Class,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
@@ -281,7 +282,41 @@ export default function ProfilePage(props) {
                           </GridItem>
                         </GridContainer>
                       )
-                    }
+                    },
+                    {
+                      tabButton: "Favorite",
+                      tabIcon: Favorite,
+                      tabContent: (
+                        <GridContainer justify="center">
+                          <GridItem xs={12} sm={12} md={4}>
+                          <h6><u>My Favorites</u></h6>
+                          
+                          </GridItem>
+                          <GridItem xs={12} sm={12} md={4}>
+                            <img
+                              alt="..."
+                              src={work4}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={work5}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={work3}
+                              className={navImageClasses}
+                            />
+                    <img
+                              alt="..."
+                              src={work6}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                        </GridContainer>
+                      )
+                    },
                   ]}
                 />
               </GridItem>
